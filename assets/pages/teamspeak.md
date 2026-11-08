@@ -17,8 +17,8 @@ or
 <br>
 
 
-# Guides
-#### Ts3:
+## Guides
+### Ts3:
 When installing teamspeak 3 it will ask you if you want to install the optional software called overwolf, you do not need this so it is recommended to uncheck the checkbox marked with red as shown in the screenshot below.
 
 ![Alt text](/img/ts3_overwolf.png)
@@ -64,7 +64,7 @@ Joining the channel indicated with the green box in the screenshot will create a
 
 
 
-#### Ts6
+### Ts6
 After installing, the first time you launch the program Teamspeak will ask you to back up your recovery key, if you forget your password you'll need this key to get your teamspeak identity back.
 In order to proceed click the checkbox and hit continue.
 ![Alt text](/img/ts6_recoverykey.png)

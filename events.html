@@ -1,20 +1,40 @@
 ---
 title: Voyages
-masthead: slim
-lead: Every event is planned on TeamSpeak and lands here automatically. If the log below is quiet, the fleet is still sailing — step aboard and ask.
+lead: Every event is planned on TeamSpeak and lands here automatically. If the log is quiet, the fleet is still sailing.
 ---
-<div class="article">
-  <div class="grid12">
-    <nav class="side-nav" aria-label="Pages">
-      <p>On this site</p>
-      <a href="/">Home</a>
-      <a href="/events.html">Voyages</a>
-      <a href="/crew.html">The Crew</a>
-      <a href="/join.html">Sailing with us</a>
-      <a href="/guides.html">Cargo &amp; Guides</a>
-    </nav>
-    <div class="article-body event-log">
-      {% include_relative assets/pages/events.md %}
+<header class="page-hero"><div class="container">
+  <h1>Voyages</h1>
+  <p>Every event is planned on TeamSpeak and lands here automatically. If the log is quiet, the fleet is still sailing. Step aboard and ask.</p>
+  <figure>
+    <img src="/img/paintings/the-battle-of-the-texel-11-21.jpg" alt="The Battle of the Texel, 1673 — the Dutch fleet in action" loading="lazy">
+    <figcaption>The Battle of the Texel, 1673 — Willem van de Velde the Younger (public domain)</figcaption>
+  </figure>
+</div></header>
+<div class="article container">  <nav class="side-nav" aria-label="Pages">
+    <p>On this site</p>
+    <a href="/">Home</a>
+    <a href="/events.html">Voyages</a>
+    <a href="/crew.html">The Crew</a>
+    <a href="/join.html">Sailing with us</a>
+    <a href="/teamspeak.html">TeamSpeak guide</a>
+    <a href="/guides.html">Cargo &amp; Guides</a>
+  </nav>
+
+  <div class="article-body event-log">
+    {% include_relative assets/pages/events.md %}
+
+    <h2>Recent voyages</h2>
+    <p>The log above is fed live from TeamSpeak. These are voyages the fleet sailed recently.</p>
+    <div class="voyage-list">
+      {% for v in site.data.voyages %}
+      <article class="voyage">
+        <p class="voyage-date"><b>{{ v.day }}</b>{{ v.date_label }}</p>
+        <div>
+          <h3>{{ v.title }}</h3>
+          <p>{{ v.excerpt }}</p>
+        </div>
+      </article>
+      {% endfor %}
     </div>
   </div>
 </div>

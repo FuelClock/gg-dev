@@ -1,78 +1,131 @@
 ---
 standfirst: A proud Dutch and English flotilla in World of Sea Battle — we fly the flag on every voyage.
 ---
-<section class="statement" aria-label="Who we are">
-  <div class="tile-board">
-    <div class="tile-slogan"><p class="slogan">Onder<br>eén vlag</p></div>
-    <div class="tile-word"><p class="word">NL·EN</p></div>
-    <figure class="tile-photo"><img src="/img/paintings/willem-van-de-velde-the-gunshot-illustrated.jpg" alt="Two ships trading a broadside — The Gunshot, by Willem van de Velde" width="1920" height="1490"></figure>
-    <div class="tile-text">
-      <p>De Goud Graaiers is a Dutch and English flotilla, about two thirds of us Dutch, all proud to sail under the flag. As a neutral flotilla we keep allied standing with every faction, which keeps our seas calm and our options open. War hunts, boarding raids, trade loops, quiet cruises. Gerrit&rsquo;s vision is a fleet where different playstyles and languages converge into one crew that simply enjoys sailing together.</p>
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="kicker">[NL.] Goud Graaiers · World of Sea Battle</p>
+      <h1 class="hero-title">A proud Dutch flotilla</h1>
+      <p class="lead">Dutch and English sailors together, under one flag. War hunts, boarding raids, trade loops, quiet cruises: we sail everything, together.</p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="/join.html">Join the flotilla</a>
+        <a class="btn btn-navy" href="ts3server://donkey.beauty">TeamSpeak: donkey.beauty</a>
+      </div>
+    </div>
+    <figure class="hero-art">
+      <img src="/img/paintings/the-battle-of-the-texel-11-21.jpg" alt="The Battle of the Texel, 1673 — the Dutch fleet in action, painting by Willem van de Velde the Younger" width="1920" height="1198">
+      <figcaption class="hero-caption">The Battle of the Texel, 1673 — Willem van de Velde the Younger (public domain)</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section container" aria-label="Voyages">
+  <div class="section-head">
+    <h2>Recent voyages</h2>
+    <p>Every event is planned on TeamSpeak and lands on the <a href="/events.html">voyage log</a> automatically.</p>
+  </div>
+  <div class="voyage-list">
+    {% for v in site.data.voyages %}
+    <article class="voyage">
+      <p class="voyage-date"><b>{{ v.day }}</b>{{ v.date_label }}</p>
+      <div>
+        <h3>{{ v.title }}</h3>
+        <p>{{ v.excerpt }}</p>
+        <a class="more" href="/events.html">Read the plan</a>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section container" style="padding-top: 0;" aria-label="Who we are">
+  <div class="section-head">
+    <h2>Who we are</h2>
+  </div>
+  <div class="who-grid">
+  <div class="article-body">
+    <p>De Goud Graaiers is a Dutch and English flotilla, about two thirds of us Dutch, all proud to sail under the flag. As a neutral flotilla we keep allied standing with every faction, which keeps our seas calm and our options open. Gerrit&rsquo;s vision is a fleet where different playstyles and languages converge into one crew that simply enjoys sailing together.</p>
+  </div>
+  <figure class="figure-band">
+    <img src="/img/paintings/dutch-ships-becalmed-rmg-pw6953.jpg" alt="Dutch ships at rest on still water, circa 1685" width="1920" height="1210" loading="lazy">
+    <figcaption>Dutch ships becalmed, c. 1685 (public domain)</figcaption>
+  </figure>
+  </div>
+  <dl class="facts">
+    <div class="fact"><dt>TeamSpeak</dt><dd>donkey.beauty</dd></div>
+    <div class="fact"><dt>In-game</dt><dd>search &ldquo;NL.&rdquo;</dd></div>
+    <div class="fact"><dt>Standing</dt><dd>Neutral, allied with all</dd></div>
+  </dl>
+</section>
+
+<section class="section container" style="padding-top: 0;" aria-label="How we sail">
+  <div class="section-head">
+    <h2>How we sail</h2>
+    <p>Two ways to take the water. Both are the same fleet.</p>
+  </div>
+  <figure class="squad-figure">
+    <img src="/img/paintings/willem-van-de-velde-the-gunshot-illustrated.jpg" alt="Two ships trading a broadside — The Gunshot, by Willem van de Velde" width="1920" height="1490" loading="lazy">
+    <figcaption>The Gunshot — Willem van de Velde (no known copyright restrictions)</figcaption>
+  </figure>
+  <div class="two-col">
+    <div class="card">
+      <h3>Organized squads</h3>
+      <p>A dedicated leader in voice chat: planned formations, coordinated strikes, profit and safety shared by every ship in the line. Multi-squad coordination runs across TeamSpeak channels.</p>
+      <p class="sub">Voice chat is how squad leaders give calls. Listening in is already a big help.</p>
+    </div>
+    <div class="card">
+      <h3>Chill squads</h3>
+      <p>For quiet water: social, relaxed sailing with no pressure to lead or follow. Text or voice, whichever suits the evening.</p>
+      <p class="sub">Join whichever squad fits your evening. No reputation requirements, no forced voice.</p>
     </div>
   </div>
 </section>
 
-<section class="doctrine" aria-label="How the flotilla sails">
-  <div class="grid12">
-    <dl class="doctrine-facts">
-      <dt>TeamSpeak</dt><dd>donkey.beauty</dd>
-      <dt>In-game</dt><dd>search &ldquo;NL.&rdquo;</dd>
-      <dt>Standing</dt><dd>neutral, allied with all</dd>
-    </dl>
-    <p class="doctrine-body"><img class="doctrine-portrait" src="/img/paintings/dutch-ships-becalmed-rmg-pw6953.jpg" alt="Dutch ships at rest on still water, circa 1685" width="480" height="480">Organized squads sail under a leader in voice chat: planned formations, coordinated strikes, profit shared by every ship in the line.</p>
-<p class="doctrine-body soft">Chill squads are for quiet water: social, text or voice, no pressure. Both are the same fleet.</p>
+<section class="section container" style="padding-top: 0;" aria-label="Finding the fleet">
+  <div class="section-head">
+    <h2>Finding the fleet</h2>
+    <p>Open the Guild Ranking panel in-game, search for the tag NL., and send your application to Goud Graaiers.</p>
   </div>
-</section>
-
-<section class="voyages" aria-label="Voyages">
-  <div class="voyages-stage">
-    <h2 class="voyages-heading">Recent voyages</h2>
-    <div class="deck">
-      {% for v in site.data.voyages %}
-      <article class="deck-card tone-{{ forloop.index }}" data-index="{{ forloop.index0 }}">
-        <h3 class="card-title">{{ v.title }}</h3>
-        <p class="card-excerpt">{{ v.excerpt }}</p>
-        <div class="card-foot">
-          <span class="card-date">{{ v.date_label }}</span>
-          <a class="card-link" href="{{ v.url }}">Read the plan</a>
-        </div>
-      </article>
-      {% endfor %}
+  <div class="steps">
+    <div class="step">
+      <h3>Search</h3>
+      <p>Guild Ranking tab, top right of the screen in-game.</p>
     </div>
-    <p class="deck-more">The voyage log is kept from TeamSpeak. <a href="/events.html">See all voyages</a></p>
-  </div>
-  <div class="voyages-spacer" aria-hidden="true"></div>
-</section>
-
-<section class="section joining" aria-label="Finding the fleet">
-  <div class="grid12">
-    <h2 class="section-heading">Finding the fleet</h2>
-    <p class="joining-intro">Open the Guild Ranking panel in-game, search for the tag NL., and send your application to Goud Graaiers. An admiral will accept you aboard, usually the same evening.</p>
-    {% include fleet-diagram.html %}
-    <div class="joining-steps">
-      <div><b>Search</b><p>Guild Ranking tab, top right of the screen in-game.</p></div>
-      <div><b>Apply</b><p>Pick Goud Graaiers under the NL. tag and send your application.</p></div>
-      <div><b>Set sail</b><p>An admiral accepts you aboard and you&rsquo;re in the fleet.</p></div>
+    <div class="step">
+      <h3>Apply</h3>
+      <p>Pick Goud Graaiers under the NL. tag and send your application.</p>
+    </div>
+    <div class="step">
+      <h3>Set sail</h3>
+      <p>An admiral accepts you aboard, usually the same evening.</p>
     </div>
   </div>
 </section>
 
-<section class="section faq" aria-label="Questions">
-  <div class="faq-rows">
-    <div class="faq-row faq-row--head"><h2 class="faq-q">Before you board</h2></div>
-    <div class="faq-row"><h3 class="faq-q">Must I be Dutch?</h3><p class="faq-a">No. We are a Dutch and English flotilla — about two thirds of us are Dutch, and everything here is written in English. The flag is flown for everyone aboard.</p></div>
-    <div class="faq-row"><h3 class="faq-q">Do I need TeamSpeak?</h3><p class="faq-a">It is not enforced, but it is how organized squads coordinate: <a href="ts3server://donkey.beauty">donkey.beauty</a>. Squad leaders give calls by voice; listening in is already a big help.</p></div>
-    <div class="faq-row"><h3 class="faq-q">Is the guild in a faction?</h3><p class="faq-a">No. We sail as a neutral flotilla with allied standing across the factions, which keeps hostile encounters rare. We stay friendly with the Dutch guilds. If the game adds a Dutch line, or the majority of the fleet wants a pledge, we may pledge together.</p></div>
-    <div class="faq-row"><h3 class="faq-q">What will we actually do?</h3><p class="faq-a">Everything the sea offers: war hunts, boarding raids, trade loops, expeditions and quiet cruises, in organized squads or chill squads.</p></div>
-    <div class="faq-row"><h3 class="faq-q">How do ranks work?</h3><p class="faq-a">Cabin Boy is where you start. Sail with us on TeamSpeak weekly and Midshipman shows you every member on the map. Admirals host the voyages and run the fleet. <a href="/crew.html">The full ladder is on The Crew</a>.</p></div>
-    <div class="faq-row"><h3 class="faq-q">What if I sail casually?</h3><p class="faq-a">Fine by us. Freedom to engage is the rule: no reputation requirements, no forced voice. Read Gerrit&rsquo;s vision above and see whether it fits you.</p></div>
+<section class="section container" style="padding-top: 0;" aria-label="Questions">
+  <div class="section-head">
+    <h2>Before you board</h2>
+  </div>
+  <div class="faq">
+    <div class="faq-item"><h3>Must I be Dutch?</h3><p>No. We are a Dutch and English flotilla, about two thirds Dutch, and everything here is written in English. The flag is flown for everyone aboard.</p></div>
+    <div class="faq-item"><h3>Do I need TeamSpeak?</h3><p>It is not enforced, but it is how organized squads coordinate: <a href="ts3server://donkey.beauty">donkey.beauty</a>. Just listening in is already a big help.</p></div>
+    <div class="faq-item"><h3>Is the guild in a faction?</h3><p>No. We sail as a neutral flotilla with allied standing across the factions, which keeps hostile encounters rare. We stay friendly with the Dutch guilds. If the game adds a Dutch line, or the majority of the fleet wants a pledge, we may pledge together.</p></div>
+    <div class="faq-item"><h3>What will we actually do?</h3><p>Everything the sea offers: war hunts, boarding raids, trade loops, expeditions and quiet cruises, in organized squads or chill squads.</p></div>
+    <div class="faq-item"><h3>How do ranks work?</h3><p>Cabin Boy is where you start. Sail with us on TeamSpeak weekly and Midshipman shows you every member on the map. Admirals host the voyages and run the fleet. <a href="/crew.html">The full ladder is on The Crew.</a></p></div>
   </div>
 </section>
 
-<section class="cta" aria-label="Join">
-  <h2 class="cta-headline">Vaar met<br>ons mee</h2>
-  <div class="cta-row">
-    <p class="cta-sentence">Step aboard TeamSpeak at donkey.beauty, or find us in-game under the tag NL.</p>
-    <a class="cta-button" href="ts3server://donkey.beauty">Connect to TeamSpeak</a>
+<section class="section container" style="padding-bottom: 0;" aria-label="The fleet">
+  <figure class="figure-band">
+    <img src="/img/paintings/the-battle-of-the-sound-8-november.jpg" alt="The Battle of the Sound, 1658 — Dutch warships breaking through, painting by Willem van de Velde the Elder" width="1920" height="1300" loading="lazy">
+    <figcaption>The Battle of the Sound, 1658 — Willem van de Velde the Elder (public domain)</figcaption>
+  </figure>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <h2>Vaar met ons mee</h2>
+    <p>Step aboard TeamSpeak at donkey.beauty, or find us in-game under the tag NL.</p>
+    <a class="btn btn-gold" href="ts3server://donkey.beauty">Connect to TeamSpeak</a>
   </div>
 </section>
