@@ -114,6 +114,9 @@ h1, h2, h3, h4 { font-weight: 500; line-height: 1.15; letter-spacing: 0; margin:
   color: var(--navy-muted);
   text-decoration: none;
   padding: 8px 14px;
+  line-height: 1.2;
+  display: inline-flex;
+  align-items: center;
 }
 .site-nav a:hover { color: var(--gold-ink); background: var(--gold); }
 .site-nav a[aria-current="page"] { color: var(--gold); }
@@ -199,7 +202,7 @@ h1, h2, h3, h4 { font-weight: 500; line-height: 1.15; letter-spacing: 0; margin:
 .voyage-date b { display: block; font-size: 1.625rem; font-weight: 500; color: var(--navy); }
 .voyage h3 { font-size: 1.5rem; margin-bottom: 6px; }
 .voyage p { margin: 0 0 12px; color: var(--muted); max-width: 72ch; }
-.voyage .more { font-size: 1rem; }
+.voyage .more { font-size: 1rem; display: inline-block; padding: 10px 0; }
 .voyages-empty { padding: 20px 0; margin: 0; }
 
 .figure-band { margin: 0; }
@@ -304,7 +307,7 @@ h1, h2, h3, h4 { font-weight: 500; line-height: 1.15; letter-spacing: 0; margin:
 }
 .footer-col { display: flex; flex-direction: column; gap: 6px; font-size: 1rem; }
 .footer-col p { margin: 0 0 8px; }
-.footer-col a { color: var(--navy-muted); text-decoration: none; }
+.footer-col a { color: var(--navy-muted); text-decoration: none; padding: 6px 0; display: inline-block; }
 .footer-col a:hover { color: var(--gold-ink); background: var(--gold); }
 .col-head { color: var(--navy-ink); font-weight: 500; margin: 0 0 8px; font-size: 1.0625rem; }
 .footer-col--credits p { color: var(--navy-muted); font-size: 1rem; }
